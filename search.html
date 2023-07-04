@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House or Room Rental Connection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navigation -->
+    <nav>
+      <!-- Navigation items -->
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="saved.html">Saved</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Logo -->
+    <img src="logo.png" alt="House or Room Rental Connection" class="logo">
+  </header>
+  
+  <div class="search-screen">
+    <h1>Search Properties</h1>
+    
+    <form id="searchForm">
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="Enter location">
+      </div>
+      
+      <div class="form-group">
+        <label for="priceRange">Price Range</label>
+        <input type="range" id="priceRange" min="0" max="100" step="10">
+      </div>
+      
+      <div class="form-group">
+        <label for="bedrooms">Number of Bedrooms</label>
+        <select id="bedrooms">
+          <option value="">Any</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5+</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="bathrooms">Number of Bathrooms</label>
+        <select id="bathrooms">
+          <option value="">Any</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5+</option>
+        </select>
+      </div>
+      
+      <button type="submit" class="btn-search">Search</button>
+    </form>
+    
+    <div class="filter-options">
+      <h2>Filter Options</h2>
+      
+      <div class="form-group">
+        <label>Property Type</label>
+        <div>
+          <input type="checkbox" id="propertyType1" value="house">
+          <label for="propertyType1">House</label>
+        </div>
+        <div>
+          <input type="checkbox" id="propertyType2" value="apartment">
+          <label for="propertyType2">Apartment</label>
+        </div>
+        <div>
+          <input type="checkbox" id="propertyType3" value="room">
+          <label for="propertyType3">Room</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Amenities</label>
+        <div>
+          <input type="checkbox" id="amenities1" value="parking">
+          <label for="amenities1">Parking</label>
+        </div>
+        <div>
+          <input type="checkbox" id="amenities2" value="wifi">
+          <label for="amenities2">WiFi</label>
+        </div>
+        <div>
+          <input type="checkbox" id="amenities3" value="gym">
+          <label for="amenities3">Gym</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="availability">Availability</label>
+        <input type="checkbox" id="availability">
+        <label for="availability">Available properties only</label>
+      </div>
+      
+      <div class="form-group">
+        <label for="sorting">Sorting</label>
+        <select id="sorting">
+          <option value="priceAsc">Price (Low to High)</option>
+          <option value="priceDesc">Price (High to Low)</option>
+          <option value="rating">Rating</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+      
+      <button class="btn-apply-filters">Apply Filters</button>
+    </div>
+    
+    <div class="search-results">
+      <h2>Search Results</h2>
+      
+      <div class="property">
+        <div class="thumbnail">
+          <img src="property1.jpg" alt="Property 1">
+        </div>
+        <div class="property-info">
+          <h3>Property 1</h3>
+          <p>Owner Verified</p>
+          <p>Other renters information (if applicable)</p>
+          <button class="btn-view-details">View Details</button>
+        </div>
+      </div>
+      
+      <div class="property">
+        <div class="thumbnail">
+          <img src="property2.jpg" alt="Property 2">
+        </div>
+        <div class="property-info">
+          <h3>Property 2</h3>
+          <p>Owner Verified</p>
+          <p>Other renters information (if applicable)</p>
+          <button class="btn-view-details">View Details</button>
+        </div>
+      </div>
+      
+      <div class="property">
+        <div class="thumbnail">
+          <img src="property3.jpg" alt="Property 3">
+        </div>
+        <div class="property-info">
+          <h3>Property 3</h3>
+          <p>Owner Verified</p>
+          <p>Other renters information (if applicable)</p>
+          <button class="btn-view-details">View Details</button>
+        </div>
+      </div>
+      
+      <button class="btn-view-more">View More</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
